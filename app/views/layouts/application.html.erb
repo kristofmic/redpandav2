@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app='RedPandaApp'>
+  <head>
+    <title>V2</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= yield :head_js %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+      <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<div class='row'>
+	<div class='col-md-12'>
+		<h3>Feeds</h3>  
+	</div>
+</div>
+
+<div class='row masonry clearfix'>
+	<div class='panel panel-default brick' ng-repeat='feed in feeds'>
+		<div class='panel-heading'>
+			<h3 class='panel-title'><a href='#' ng-href='{{feed.url}}'>{{feed.title}}</a></h3>
+		</div>
+		<ul class="list-group" >
+	    <li class="list-group-item" ng-repeat='entry in feed.feed_entries'>
+	    	<a href='#' ng-href='{{entry.url}}'>{{entry.title}}</a>
+	    </li>
+	  </ul>
+  </div>
+</div>
+
+
+	

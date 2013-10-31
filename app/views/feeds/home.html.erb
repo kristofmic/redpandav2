@@ -1,0 +1,6 @@
+<% content_for :head_js do %>
+  <%= javascript_include_tag 'controllers/feeds_controller.js' %>
+  <%= javascript_include_tag 'directives/feeds_layout.js' %>
+<% end %>
+
+<ng-view></ng-view>
