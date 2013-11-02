@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131031141249) do
+ActiveRecord::Schema.define(:version => 20131101124350) do
 
   create_table "feed_entries", :force => true do |t|
     t.integer  "feed_id"
@@ -39,5 +39,16 @@ ActiveRecord::Schema.define(:version => 20131031141249) do
   end
 
   add_index "feeds", ["feed_url"], :name => "index_feeds_on_feed_url", :unique => true
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "cookie_token"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "users", ["cookie_token"], :name => "index_users_on_cookie_token"
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

@@ -1,3 +1,27 @@
+/* Main */
 body { padding-top: 70px; }
 
-.brick { width: 33%; }
+h1, h2, h3, h4, h5, h6, p, a, label, input, .btn { font-weight: 300;}
+
+.form-heading { margin-left: -15px; }
+
+/* Header */
+.navbar-collapse .nav.navbar-nav.navbar-right { margin-right: 15px; }
+.navbar-collapse .navbar-nav .btn-link { color: #777; }
+.navbar-collapse .navbar-nav .btn-link:hover { color: #333;} 
+
+/* Users */
+
+/* Feeds */
+.brick { width: 32%; }
+
+#refresh {
+	margin-top: 16px;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 1.1;
+	cursor: pointer;
+	color: #777;
+}
+
+#refresh:hover { color: #333; }

@@ -1,10 +1,13 @@
 <div class='row'>
-	<div class='col-md-12'>
+	<div class='col-md-3'>
 		<h3>Feeds</h3>  
+	</div>
+	<div class='col-md-1 col-md-offset-8'>
+		<span id='refresh' class='glyphicon glyphicon-refresh'></span>
 	</div>
 </div>
 
-<div class='row masonry clearfix'>
+<div class='masonry clearfix'>
 	<div class='panel panel-default brick' ng-repeat='feed in feeds'>
 		<div class='panel-heading'>
 			<h3 class='panel-title'><a href='#' ng-href='{{feed.url}}'>{{feed.title}}</a></h3>
@@ -16,6 +19,3 @@
 	  </ul>
   </div>
 </div>
-
-
-	

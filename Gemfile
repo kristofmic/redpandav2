@@ -3,6 +3,7 @@ ruby '2.0.0'
 gem 'rails', '3.2.14'
 gem 'jquery-rails'
 gem "feedzirra", "~> 0.2.1"
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :assets do
   gem 'uglifier', '>= 1.0.3'

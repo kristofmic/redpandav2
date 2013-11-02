@@ -2,7 +2,7 @@ RedPandaApp.directive('masonry', function(){
 	return {
 		restrict: 'C',
 		link: function(scope, elem, attrs, controller){
-			$(elem).masonry({columnWidth: '.brick', itemSelector: '.brick'});
+			$(elem).masonry({columnWidth: '.brick', itemSelector: '.brick', gutter: 12});
 		}
 	};
 });
@@ -15,6 +15,7 @@ RedPandaApp.directive('brick', function($timeout){
 				$(elem).parents('.masonry').masonry('reloadItems');
 				$(elem).parents('.masonry').masonry('layout');
 			}, 0);
+			
 		}
 	};
 });

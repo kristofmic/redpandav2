@@ -31,6 +31,7 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.0.4)
     coderay (1.0.9)
     curb (0.8.5)
@@ -119,6 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (= 2.5.0)
+  bcrypt-ruby (~> 3.0.0)
   feedzirra (~> 0.2.1)
   jquery-rails
   pg (= 0.15.1)

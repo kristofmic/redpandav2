@@ -2,9 +2,15 @@ var RedPandaApp = angular.module('RedPandaApp', [])
                          .config(function($routeProvider){
                             $routeProvider.when('/feeds',
                               {
-                                templateUrl: 'assets/feeds.html',
+                                templateUrl: 'feeds/index',
                                 controller: 'FeedsController'
                               }
                             );
-                            $routeProvider.otherwise({ redirectTo: '/feeds' });
+                            $routeProvider.when('/users/profile',
+                            	{
+                            		templateUrl: 'users/profile',
+                            		controller: 'UsersController'
+                            	}
+                            );
+                            $routeProvider.otherwise({redirectTo: '/feeds'});
                          });
